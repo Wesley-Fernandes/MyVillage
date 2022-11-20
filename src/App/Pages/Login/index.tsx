@@ -31,19 +31,23 @@ export default function LoginPage() {
                     }} />
                 </p>
 
-                    <span className='btn Help'>
-                        <i className="bi bi-info-circle-fill"></i> 
-                        Precisa de ajuda?
-                    </span>
+
+                    <button className='btn Help btn-success'>
+                        <i className="bi bi-info-circle-fill"></i>
+                        <span>Precisa de ajuda?</span>
+                    </button>
             </div>
 
         </div>
         <div className='right'>
+            <span className='Version'>Versão: 0.0.2</span>
             <form className='formulary flex-shrink-1'>
                 <h3>Faça seu login para entrar</h3>
                 <Input changer={setEmail} typeInput="email" placeholder='Digite seu email!'/>
                 <Input changer={setEmail} typeInput="password" placeholder='Digite a sua senha!'/>
-                <button type="button" className="btn btn-primary m-1">Entrar na conta</button>
+                <button type="button" className="btn btn-primary m-1" style={{"width":"100%"}}>
+                    Entrar na conta
+                </button>
 
             </form>
         </div>
